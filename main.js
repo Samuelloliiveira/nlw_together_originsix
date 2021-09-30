@@ -43,7 +43,6 @@ const swiper = new Swiper('.swiper', {
 
 })
 
-
 /* ScrollReveal: Mostrar elementos quando der scroll na página suavemente */
 const scrollReveal = ScrollReveal({
   

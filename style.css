@@ -88,7 +88,6 @@ body {
   );
 }
 
-
 /* ------ LAYOUT ------ */
 .container {
   margin-left: 1.5rem;
@@ -144,6 +143,10 @@ main {
 
 .logo span {
   color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--body-color);
 }
 
 /* ------ VAVIGATION ------ */
@@ -215,7 +218,7 @@ nav.show .menu {
   place-content: center;
 }
 
-nav.show .menu ul{
+nav.show .menu ul {
   display: grid;
 }
 
@@ -298,7 +301,6 @@ nav.show div.icon-close {
   max-width: 100%;
 }
 
-
 /* ------ ABOUT ------ */
 #about {
   background: white;
@@ -347,7 +349,7 @@ nav.show div.icon-close {
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
-  border-radius: .25rem .25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
@@ -379,7 +381,7 @@ nav.show div.icon-close {
   margin-bottom: 0;
 }
 
-#testimonials blockquote{
+#testimonials blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
@@ -394,7 +396,7 @@ nav.show div.icon-close {
 
 #testimonials blockquote p span {
   font: 700 3rem serif;
-  
+
   position: absolute;
   top: -0.5rem;
   left: -1.875rem;
@@ -408,11 +410,11 @@ nav.show div.icon-close {
   font-style: normal;
 }
 
-#testimonials cite img{
+#testimonials cite img {
   width: 2rem;
   height: 2rem;
   object-fit: cover;
-  clip-path: circle();/* mascara circular */
+  clip-path: circle(); /* mascara circular */
   margin-right: 0.5rem;
 }
 
@@ -452,4 +454,28 @@ nav.show div.icon-close {
 
 #contact ul li i {
   color: var(--base-color);
+}
+
+/* ------ FOOTER ------ */
+footer {
+  background: var(--base-color);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer .social a {
+  margin-right: 2rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
 }
