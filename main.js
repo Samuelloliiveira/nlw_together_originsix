@@ -18,9 +18,9 @@ for(const link of links) {
 }
 
 /* colocar sombra no header quando fazer scroll */
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
 function changeHeaderWhenScroll() {
-  const header = document.querySelector('#header')
-  const navHeight = header.offsetHeight
   
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
@@ -70,8 +70,8 @@ scrollReveal.reveal(`
 )
 
 /* Botão de voltar ao topo */
+const backToTopButton = document.querySelector('.back-to-top')
 function backToTop() {
-  const backToTopButton = document.querySelector('.back-to-top')
 
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
@@ -80,8 +80,43 @@ function backToTop() {
   }
 }
 
+
+/* Menu ativo conforme a seção visível na página */
+
+//pegando todas as sections que tem um id
+const sections = document.querySelectorAll('section[id]')
+function activateMenuAtCurrentSection() {
+
+  //pegando o deslocamento Y da página e fazendo um calculo
+  const limit = window.pageYOffset + (window.innerHeight / 8) * 4
+
+  for(const section of sections) {
+    const sectionTop = section.offsetTop //pega topo
+    const sectionHeight = section.offsetHeight //pega a altura
+    const sectionId = section.getAttribute('id') //pega o id da sessão
+
+    const limitStart = limit >= sectionTop
+    const limitEnd = limit <= sectionTop + sectionHeight
+
+    if (limitStart && limitEnd) {
+      //pega o id do menu que tem a ver com a sessão do momento
+      document
+      .querySelector('nav ul li a[href*=' + sectionId + ']')
+      .classList.add('active')
+    } else {
+      document
+      .querySelector('nav ul li a[href*=' + sectionId + ']')
+      .classList.remove('active')
+    }
+
+  }
+
+
+}
+
 /* When Scroll */
 window.addEventListener('scroll', function() {
   changeHeaderWhenScroll()
   backToTop()
+  activateMenuAtCurrentSection()
 })
