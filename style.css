@@ -530,20 +530,40 @@ footer i {
   transform: translateY(0);
 }
 
-/* Responsivo */
-/* ======== MEDIA QUERIES - breakpoints ======= */
-/* 
-   large devices? 1023 >
-   menium devices: 767 >
-*/
+/* ======== MEDIA QUERIES - breakpoints - Responsivo ======= */
 
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
+
+  /* BASE */
+  main {
+    margin-top: var(--header-height);
+  }
+
+  /* LAYOUT */
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.125rem;
+  }
 
   .section {
     padding: 10rem 0;
   }
 
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* navigation */
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -559,11 +579,80 @@ footer i {
     font: 400 1rem var(--body-font);
   }
 
-  main {
-    margin-top: var(--header-height);
+  nav .icon-menu {
+    display: none;
   }
-  
+
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;/* order só funciona dentro de uma caixa grid/flex */
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  /* abount */
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* services */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* testimonials */
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* contact */
+  #contact .container,
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container{
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+
 }
+
+/* 
+   large devices? 1023 >
+   menium devices: 767 >
+*/
 
 /* large devices: 992 >  */
 @media (min-width: 992px) {
