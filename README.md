@@ -1,5 +1,5 @@
 # nlw_together_originsix
-Projeto NLW Together <br>
+Projeto NLW Together
 
 ## <br><br>
 
