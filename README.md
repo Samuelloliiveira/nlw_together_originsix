@@ -1,7 +1,7 @@
 # nlw_together_originsix
 Projeto NLW Together
 
-## <br><br>
+##
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
