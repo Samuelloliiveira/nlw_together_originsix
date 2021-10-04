@@ -33,6 +33,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --text-background-black: white;
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -51,13 +52,13 @@ html {
 body {
   font: 400 1rem var(--body-font);
   color: var(--text-color);
-  background: var(--body-color);
+  background: black;
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
   font: 700 var(--title-font-size) var(--title-font);
-  color: var(--title-color);
+  color: var(--text-background-black);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -115,6 +116,7 @@ body {
 
 .section .subtitle {
   font-size: var(--subtitle-font-size);
+  color: var(--text-background-black);
 }
 
 .section header {
@@ -163,6 +165,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+nav .menu ul li a{
+  color: black;
 }
 
 nav ul li {
@@ -269,6 +275,10 @@ nav.show div.icon-close {
   overflow: hidden;
 }
 
+#home p {
+  color: var(--text-background-black);
+}
+
 #home .container {
   margin: 0;
 }
@@ -332,7 +342,7 @@ nav.show div.icon-close {
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--base-color-second);
+  background: var(--base-color);
   position: absolute;
   top: -8.3%;
   left: -33%;
@@ -353,6 +363,10 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
+#about .text .title {
+  color: black;
+}
+
 /* ------ SERVICES ------ */
 .cards.grid {
   gap: 1.5rem;
@@ -364,6 +378,7 @@ nav.show div.icon-close {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+  background: white;
 }
 
 .card i {
@@ -391,6 +406,10 @@ nav.show div.icon-close {
 /* ------ TESTIMONIALS ------ */
 #testimonials {
   background: white;
+}
+
+#testimonials header h2 {
+  color: black;
 }
 
 #testimonials .container {
@@ -458,6 +477,7 @@ nav.show div.icon-close {
 
 #contact .text p {
   margin-bottom: 2rem;
+  color: white;
 }
 
 #contact .button i,
@@ -473,6 +493,7 @@ nav.show div.icon-close {
 #contact ul li {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 #contact ul li i {
@@ -630,6 +651,10 @@ footer i {
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
+  }
+
+  #about .text h2 {
+    color: black;
   }
 
   /* services */
