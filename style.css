@@ -24,9 +24,9 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 33;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsl(var(--hue) 97% 26%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -378,6 +378,16 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
+
+.card i img {
+  width: 5rem;
+  height: auto;
+}
+
+.card #finishing {
+  margin-bottom: 0;
+}
+
 /* ------ TESTIMONIALS ------ */
 #testimonials {
   background: white;
@@ -610,6 +620,10 @@ footer i {
     order: 0;
     max-width: 24rem;
     text-align: left;
+  }
+
+  #home .text h2 {
+    text-transform: uppercase;
   }
 
   /* abount */
