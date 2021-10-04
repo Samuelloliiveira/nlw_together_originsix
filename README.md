@@ -17,4 +17,4 @@ SwipeJS,
 ScrollRevel, <br>
 
 ## <br><br>
-![index_imagem](https://github.com/Samuelloliiveira/nlw_together_originsix/blob/main/img/preview.png?raw=true)
+![index_imagem](https://github.com/Samuelloliiveira/nlw_together_originsix/blob/main/img/projeto.jpg?raw=true)
