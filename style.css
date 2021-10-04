@@ -570,7 +570,7 @@ footer i {
 /* ======== MEDIA QUERIES - breakpoints - Responsivo ======= */
 
 /* extra large devices: 1200 > */
-@media (min-width: 1200px) {
+@media (min-width: 1023px) {
 
   /* BASE */
   main {
@@ -598,73 +598,6 @@ footer i {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  /* navigation */
-  nav .menu {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-  }
-
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-  
-  nav .icon-menu {
-    display: none;
-  }
-
-  /* home */
-  #home .container {
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  #home .image {
-    order: 1;/* order só funciona dentro de uma caixa grid/flex */
-  }
-
-  #home .text {
-    order: 0;
-    max-width: 24rem;
-    text-align: left;
-  }
-
-  #home .text h2 {
-    text-transform: uppercase;
-  }
-
-  /* abount */
-  #about .container {
-    margin: 0 auto;
-    grid-auto-flow: column;
-  }
-
-  #about .text h2 {
-    color: black;
-  }
-
-  /* services */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   /* testimonials */
@@ -700,11 +633,6 @@ footer i {
 
 }
 
-/* 
-   large devices? 1023 >
-   menium devices: 767 >
-*/
- 
 /* large devices: 992 >  */
 @media (min-width: 992px) {
 
@@ -712,4 +640,77 @@ footer i {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem
   }
+
+  /* services */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+    
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 767px) {
+
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  #home .image {
+    order: 1;/* order só funciona dentro de uma caixa grid/flex */
+  }
+  
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+  
+  #home .text h2 {
+    text-transform: uppercase;
+  }
+
+  /* abount */
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  #about .text h2 {
+    color: black;
+  }
+  
+}
+
+@media (min-width: 700px) {
+    /* navigation */
+    nav .menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+    }
+  
+    nav .menu ul {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    nav .menu ul li a.title {
+      font: 400 1rem var(--body-font);
+      -webkit-font-smoothing: antialiased;
+    }
+  
+    nav .menu ul li a.title.active {
+      font-weight: bold;
+      -webkit-font-smoothing: auto;
+    }
+    
+    nav .icon-menu {
+      display: none;
+    }
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?q1y8w1');
-  src:  url('fonts/icomoon.eot?q1y8w1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?q1y8w1') format('truetype'),
-    url('fonts/icomoon.woff?q1y8w1') format('woff'),
-    url('fonts/icomoon.svg?q1y8w1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?uorheh');
+  src:  url('fonts/icomoon.eot?uorheh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uorheh') format('truetype'),
+    url('fonts/icomoon.woff?uorheh') format('woff'),
+    url('fonts/icomoon.svg?uorheh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-barbershop:before {
-  content: "\e902";
-}
 .icon-arrow-up:before {
   content: "\e90b";
 }
@@ -36,6 +33,9 @@
 }
 .icon-youtube:before {
   content: "\e901";
+}
+.icon-woman-hair:before {
+  content: "\e902";
 }
 .icon-whatsapp:before {
   content: "\e903";
@@ -60,4 +60,7 @@
 }
 .icon-cosmetic:before {
   content: "\e90a";
+}
+.icon-close:before {
+  content: "\e90c";
 }
